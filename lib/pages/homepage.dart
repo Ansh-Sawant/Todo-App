@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/pages/addnote.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -10,7 +11,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => AddNote(),
+            ),
+          );
+        },
         child: Icon(
           Icons.add,
           color: Colors.white,
