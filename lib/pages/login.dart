@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/auth/google_auth.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -42,7 +43,9 @@ class _LoginPageState extends State<LoginPage> {
                 horizontal: 12.0,
               ),
               child: ElevatedButton(
-                onPressed: () {}, 
+                onPressed: () {
+                  signInWithGoogle(context);
+                }, 
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
