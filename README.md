@@ -1,16 +1,21 @@
-# todo_app
+# ToDo / Notes App
 
-A new Flutter project.
+This is a Todo mobile application in which users can write there notes or tasks which they have to ToDo.
 
-## Getting Started
+First the user has to login in the app. Then only he can create his notes.
 
-This project is a starting point for a Flutter application.
+Firebase is used to store the notes of the users int he database. We can also delete the notes in this app.
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Flutter + Firebase
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots of the App
+
+![Front](screenshots\a.jpg)
+![Main Screen](screenshots\e.jpg)
+![Creating a note screen](screenshots\c.jpg)
+![Write and then save](screenshots\d.jpg)
+![Later on view your notes](screenshots\f.jpg)
+
+
