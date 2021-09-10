@@ -9,7 +9,6 @@ class AddNote extends StatefulWidget {
 }
 
 class _AddNoteState extends State<AddNote> {
-
   late String title;
   late String des;
 
@@ -31,15 +30,15 @@ class _AddNoteState extends State<AddNote> {
                           ElevatedButton(
                             onPressed: () {
                               Navigator.of(context).pop();
-                            }, 
+                            },
                             child: Icon(Icons.arrow_back_ios_new_sharp),
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Colors.grey[600]),
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.grey[600]),
                             ),
                           ),
-
                           ElevatedButton(
-                            onPressed: add, 
+                            onPressed: add,
                             child: Text(
                               "SAVE",
                               style: TextStyle(
@@ -47,21 +46,20 @@ class _AddNoteState extends State<AddNote> {
                               ),
                             ),
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Colors.green[600]),
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.green[600]),
                             ),
                           ),
                         ],
                       ),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 15.0,
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration.collapsed(
-                          hintText: "Title"
-                        ),
+                        decoration:
+                            InputDecoration.collapsed(hintText: "Title"),
                         style: TextStyle(
                           fontSize: 30.0,
                           fontFamily: "lato",
@@ -73,7 +71,6 @@ class _AddNoteState extends State<AddNote> {
                         },
                       ),
                     ),
-
                     Container(
                       height: MediaQuery.of(context).size.height * 0.70,
                       padding: const EdgeInsets.symmetric(
@@ -82,8 +79,7 @@ class _AddNoteState extends State<AddNote> {
                       ),
                       child: TextFormField(
                         decoration: InputDecoration.collapsed(
-                          hintText: "Write a message"
-                        ),
+                            hintText: "Write a message"),
                         style: TextStyle(
                           fontSize: 20.0,
                           fontFamily: "lato",
@@ -97,7 +93,6 @@ class _AddNoteState extends State<AddNote> {
                   ],
                 ),
               ),
-      
             ],
           ),
         ),
@@ -105,22 +100,21 @@ class _AddNoteState extends State<AddNote> {
     );
   }
 
-  void add() async{
+  void add() async {
     // Save to Database
     CollectionReference ref = FirebaseFirestore.instance
-      .collection('users')
-      .doc(FirebaseAuth.instance.currentUser!.uid)
-      .collection('notes');
+        .collection('users')
+        .doc(FirebaseAuth.instance.currentUser!.uid)
+        .collection('notes');
 
-      var data = {
-        'title': title,
-        'description': des,
-        'created': DateTime.now(),
-      };
+    var data = {
+      'title': title,
+      'description': des,
+      'created': DateTime.now(),
+    };
 
-      ref.add(data);
+    ref.add(data);
 
-      Navigator.pop(context);
-  }  
-
+    Navigator.pop(context);
+  }
 }
