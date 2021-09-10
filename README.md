@@ -12,19 +12,19 @@ Flutter + Firebase
 
 ## Screenshots of the App
 
--Front
+-Front <br />
  <img src="screenshots/a.jpg" alt="Front" width="300"/>
 
--Main Screen
+-Main Screen <br />
  <img src="screenshots/e.jpg" alt="Main Screen" width="300"/>
 
--Creating a note screen
+-Creating a note screen <br />
  <img src="screenshots/c.jpg" alt="Creating a note screen" width="300"/>
 
--Write and then save
+-Write and then save <br />
  <img src="screenshots/d.jpg" alt="Write and then save" width="300"/>
 
--Later on view your notes
+-Later on view your notes <br />
  <img src="screenshots/f.jpg" alt="Front" width="300"/>
 
 
