@@ -12,10 +12,10 @@ Flutter + Firebase
 
 ## Screenshots of the App
 
-![Front](screenshots\a.jpg)
-![Main Screen](screenshots\e.jpg)
-![Creating a note screen](screenshots\c.jpg)
-![Write and then save](screenshots\d.jpg)
-![Later on view your notes](screenshots\f.jpg)
+![Front](screenshots/a.jpg)
+![Main Screen](screenshots/e.jpg)
+![Creating a note screen](screenshots/c.jpg)
+![Write and then save](screenshots/d.jpg)
+![Later on view your notes](screenshots/f.jpg)
 
 
