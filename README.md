@@ -12,7 +12,8 @@ Flutter + Firebase
 
 ## Screenshots of the App
 
-![Front](screenshots/a.jpg)
+<img src="screenshots/a.jpg" alt="Front" width="200"/>
+
 ![Main Screen](screenshots/e.jpg)
 ![Creating a note screen](screenshots/c.jpg)
 ![Write and then save](screenshots/d.jpg)
